@@ -6,11 +6,44 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#2DB42B">
     tools:context=".PrincipalActivity" >
 
     <TextView
+        android:id="@+id/textId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginRight="82dp"
+        android:layout_marginTop="34dp"
+        android:text="Bienvenidos a Lugares" />
+
+    <Button
+        android:id="@+id/btnCrear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textId"
+        android:layout_below="@+id/textId"
+        android:layout_marginTop="48dp"
+        android:text="Crear Itinerario" />
+
+    <Button
+        android:id="@+id/btnElegir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/btnCrear"
+        android:layout_below="@+id/btnCrear"
+        android:layout_marginTop="61dp"
+        android:text="Elegir Itinerario" />
+
+    <Button
+        android:id="@+id/btnSalir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textId"
+        android:layout_below="@+id/btnElegir"
+        android:layout_marginTop="59dp"
+        android:text="Salir de Lugares" />
 
 </RelativeLayout>
